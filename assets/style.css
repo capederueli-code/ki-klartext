@@ -1,0 +1,142 @@
+/* KI-Klartext Newsletter — Responsive Styles */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f5f5f0;
+    color: #2d2d2d;
+    line-height: 1.7;
+}
+
+.newsletter {
+    max-width: 640px;
+    margin: 0 auto;
+    background: #fff;
+    min-height: 100vh;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #1a5276, #2980b9);
+    color: #fff;
+    padding: 2rem 1.5rem;
+    text-align: center;
+}
+.header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+.header .subtitle {
+    font-size: 0.95rem;
+    opacity: 0.85;
+    margin-top: 0.3rem;
+}
+.header .edition {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    margin-top: 0.8rem;
+}
+
+/* Content */
+.content {
+    padding: 2rem 1.5rem;
+}
+.content h2 {
+    font-size: 1.4rem;
+    color: #1a5276;
+    margin: 1.8rem 0 0.8rem 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px solid #e8e8e8;
+}
+.content h2:first-child {
+    margin-top: 0;
+}
+.content h3 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin: 1.2rem 0 0.5rem 0;
+}
+.content p {
+    margin-bottom: 1rem;
+    font-size: 1.05rem;
+}
+.content ul, .content ol {
+    margin: 0.5rem 0 1rem 1.5rem;
+}
+.content li {
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+}
+
+/* Highlight Box */
+.highlight {
+    background: #eaf2f8;
+    border-left: 4px solid #2980b9;
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+.highlight p {
+    margin-bottom: 0.3rem;
+}
+
+/* Example Box */
+.example {
+    background: #f9f9f4;
+    border: 1px solid #e0ddd5;
+    border-radius: 8px;
+    padding: 1rem 1.2rem;
+    margin: 1rem 0;
+}
+.example .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #888;
+    margin-bottom: 0.5rem;
+}
+.example .before {
+    color: #c0392b;
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+.example .after {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+/* Tip Box */
+.tip {
+    background: #fef9e7;
+    border-left: 4px solid #f1c40f;
+    padding: 1rem 1.2rem;
+    margin: 1.2rem 0;
+    border-radius: 0 8px 8px 0;
+}
+
+/* Footer */
+.footer {
+    background: #f0f0ea;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #888;
+    border-top: 1px solid #e0e0e0;
+}
+.footer a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .header { padding: 1.5rem 1rem; }
+    .header h1 { font-size: 1.5rem; }
+    .content { padding: 1.5rem 1rem; }
+    .content h2 { font-size: 1.2rem; }
+    .content p, .content li { font-size: 1rem; }
+}
